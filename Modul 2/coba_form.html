@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Form Sederhana</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16"/>
+    <meta name="viewport" content="width=devicee-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="/action_page.php" target="_self">
+            <label for="depan">Nama depan:</label><br>
+            <input type="text" id="depan" name="i_name" value="Budi"><br>
+            <label for="n_belakang">Nama belakang:</label><br>
+            <input type="text" id="n_belakang" name="n_belakang" value="prawira"><br><br>
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+        </form>
+        <p>
+            Jika Anda mengklik tombol "kirim", data akan dikirim ke halaman bernama "/action_page.php"
+        </p>
+        <p>
+            jika menekan tombol reset maka hasil inputan akan kembali ke awal dengan bertuliskan budi dan prawira. 
+            jika menekan tombol kirim dengan target _self maka kita diarahkan ke /action_page.php tetapi pada tab yang sama.
+        </p>
+
+        <hr>
+        <form action="/action_page.php" target="_blank">
+            <label for="depan">Nama depan:</label><br>
+            <input type="text" id="depan" name="i_name" value="Budi"><br>
+            <label for="n_belakang">Nama belakang:</label><br>
+            <input type="text" id="n_belakang" name="n_belakang" value="prawira"><br><br>
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+        </form>
+        <p>
+            Jika Anda mengklik tombol "kirim", data akan dikirim ke halaman bernama "/action_page.php"
+        </p>
+        <p>
+            jika menekan tombol reset maka hasil inputan akan kembali ke awal dengan bertuliskan budi dan prawira. 
+            jika menekan tombol kirim dengan target _blank maka kita diarahkan ke /action_page.php tetapi pada tab yang baru. 
+        </p>
+
+        <hr>
+        <form action="/action_page.php" target="_parent">
+            <label for="depan">Nama depan:</label><br>
+            <input type="text" id="depan" name="i_name" value="Budi"><br>
+            <label for="n_belakang">Nama belakang:</label><br>
+            <input type="text" id="n_belakang" name="n_belakang" value="prawira"><br><br>
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+        </form>
+        <p>
+            Jika Anda mengklik tombol "kirim", data akan dikirim ke halaman bernama "/action_page.php"
+        </p>
+        <p>
+            jika menekan tombol reset maka hasil inputan akan kembali ke awal dengan bertuliskan budi dan prawira. 
+            jika menekan tombol kirim dengan target _parent maka kita diarahkan ke /action_page.php pada tab yang sama tetapi ini digunakan ketika halaman berada diframe atau iframe.
+            artinya setelah dikirim form akan ditampilkan di bingkai induk yang memuat iframe. 
+        </p>
+
+        <hr>
+        <form action="/action_page.php" target="_top">
+            <label for="depan">Nama depan:</label><br>
+            <input type="text" id="depan" name="i_name" value="Budi"><br>
+            <label for="n_belakang">Nama belakang:</label><br>
+            <input type="text" id="n_belakang" name="n_belakang" value="prawira"><br><br>
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+        </form>
+        <p>
+            Jika Anda mengklik tombol "kirim", data akan dikirim ke halaman bernama "/action_page.php"
+        </p>
+        <p>
+            jika menekan tombol reset maka hasil inputan akan kembali ke awal dengan bertuliskan budi dan prawira. 
+            jika menekan tombol kirim dengan target _top maka kita diarahkan ke /action_page.php  pada tab yang sama tetapi ini digunakan untuk keluar dari semua level frame/iframe 
+            artinya hasil submit form akan ditampilakn dijendela penuh yang mmenimpa seluruh struktur.
+        </p>
+
+        <form action="/action_page.php" method="post" >
+            <label for="depan">Nama depan:</label><br>
+            <input type="text" id="depan" name="i_name" value="Budi"><br>
+            <label for="n_belakang">Nama belakang:</label><br>
+            <input type="text" id="n_belakang" name="n_belakang" value="prawira"><br><br>
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+        </form>
+        <p>
+            Jika Anda mengklik tombol "kirim", data akan dikirim ke halaman bernama "/action_page.php"
+        </p>
+        <p>
+            jika menekan tombol reset maka hasil inputan akan kembali ke awal dengan bertuliskan budi dan prawira. 
+            jika menekan tombol kirim dengan Method post maka data dikirm melalui body request, tidak terlihat di URL lebih simpel juga.
+            cocok digunakan untuk data sensitif atau jumlah data yang besar.
+        </p>
+
+        <form action="/action_page.php" method="get">
+            <label for="depan">Nama depan:</label><br>
+            <input type="text" id="depan" name="i_name" value="Budi"><br>
+            <label for="n_belakang">Nama belakang:</label><br>
+            <input type="text" id="n_belakang" name="n_belakang" value="prawira"><br><br>
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+        </form>
+        <p>
+            Jika Anda mengklik tombol "kirim", data akan dikirim ke halaman bernama "/action_page.php"
+        </p>
+        <p>
+            jika menekan tombol reset maka hasil inputan akan kembali ke awal dengan bertuliskan budi dan prawira. 
+            jika menekan tombol kirim dengan method get maka data dikirim melalui URL (query String), sehingga terlihat dedi address bar. cocok untuk pencarian atau data yang tidak sensitif
+        </p>
+    </body>
+</html>

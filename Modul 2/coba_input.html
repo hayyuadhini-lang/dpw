@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Tipe Input</title>
+   <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+   <label for="username"> Type "text" :</label><br>
+   <input type="text" id="username" name="username"><br>
+   <label for="pwd"> Type "password" :</label><br>
+   <input type="password" id="pwd" name="pwd"><br>
+   <p> type text ini adalah menginput teks biasa berbeda dengan type Password yang hasil
+      inputannya disembunyikan dan menggantikkannya dengan titik tetapi masih bisa dilihat hasil 
+      inputan dengan klik icon gambar mata, yang biasanya dibuat untuk menginput sandi.
+   </p>
+
+   <br>
+   <hr>
+   <h3>Uji coba 2 dengan nama atribut yang sama </h3>
+   <input type="radio" id="html" name="pilihan" value="HTML"> <label for="html">HTML</label><br>
+   <input type="radio" id="css" name="pilihan" value="CSS"> <label for="css">CSS</label><br>
+   <input type="radio" id="javascript" name="pilihan" value="JavaScript"> <label for="javascript">JavaScript</label>
+
+   <h3>Uji coba 2 dengan nama atribut yang berbeda </h3>
+   <input type="radio" id="html" name="tiga" value="HTML"> <label for="html">HTML</label><br>
+   <input type="radio" id="css" name="dua" value="CSS"> <label for="css">CSS</label><br>
+   <input type="radio" id="javascript" name="satu" value="JavaScript"> <label for="javascript">JavaScript</label>
+   <p>
+      pada uji coba 2 radio button ini jika kita menamai atribut denggan nama yang sama maka kita hanya bisa memilih satu pilihan saja.
+      tetapi jika kita manamai atribut dengan nama yang berbeda maka kita dapat memilih pilihan lebih dari satu.
+   </p>
+
+   <hr>
+   <h3>Uji coba 3 dengan nama atribut yang sama</h3>
+   <input type="checkbox" id="id1" name="sebelas" value="Bike">
+   <label for="id1">I have a bike</label> <br>
+   <input type="checkbox" id="id2" name="sebelas" value="Car">
+   <label for="id2">I have a car</label> <br>
+   <input type="checkbox" id="id3" name="sebelas" value="Boat"> 
+   <label for="id3">I have a boat</label>
+
+   <h3>Uji coba 3 dengan nama atribut yang berbeda</h3>
+   <input type="checkbox" id="id1" name="duabelas" value="Bike">
+   <label for="id1">I have a bike</label> <br>
+   <input type="checkbox" id="id2" name="tigabels" value="Car">
+   <label for="id2">I have a car</label> <br>
+   <input type="checkbox" id="id3" name="empatbelas" value="Boat">
+   <label for="id3">I have a boat</label>
+   <p>
+      pada uji coba 3 checkbox ini jika kita manamai atribut dengan nama yang sama kita dapat memilih pilihann lebih dari satu.
+      tetapi jika kita manamai atribut dengan nama yang berbeda kita tetap dapat memilih pilihan lebih dari satu.
+   </p>
+
+   <hr>
+   <h3>Uji coba 4</h3>
+   <label for="favcolor">Pilih Warna dengan type="color":</label>
+   <input type="color" id="favcolor" name="favcolor"><br>
+   <label for="b">Pilih tanggal dengan type="date":</label>
+   <input type="date" id="b" name="tanggal"><br>
+   <input type="button" onclick="alert('Hello cantik')" value="Click Me!"> <br>
+   <p>
+      pada  uji coba ke 4 ini kita dapat menginputkan warna, menginputkan tanggal yang lengkap tetapi belum ada waktunya. dan pada saat mengeklik tombol
+      Click me, maka diatas akan muncul kayak notifikasi yang bertulisan hallo cantik.
+   </p>
+
+   <hr>
+   <h3>Uji Coba 5</h3>
+   <label for="birthdaytime">input dengan type datetime-local:</label>
+   <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+   <label for="bdaymonth">input dengan type month:</label>
+   <input type="month" id="bdaymonth" name="bdaymonth"><br>
+   <label for="email">enter your email:</label>
+   <input type="email" id="email" name="email"><br>
+   <p>
+      pada uji coba ke 5 ini kita diarahkan untuk membuat inputan dengan type datetime-local yang dapat digunakan pengguna untuk menginputkan tanggal secara lengkap
+      beserta jamnya, lalu kita juga diarahkan untuk membuat inputan dengan type month yang dapat digunakan pengguna untuk menginputkan bulan beserta dengan tanggalnya. 
+      selanjutnya kita juga diarahkan untuk membuat inputan email dengan ini jika kita memencet kolom inputan, maka inputan tersebut langsung muncul dibawahnya email kita yang sudah terdaftar.
+   </p>
+
+   <hr>
+   <h3>Uji Coba 6</h3>
+   <input type="image" src="gambar/Submit.jpg" alt="submit" width="48" height="48"><br>
+   <label for="myfile">Pilih File:</label>
+   <input type="file" id="myfile" name="myfile"><br>
+   <input type="hidden" id="custId" name="custId" value="3487"><br>
+   <p>
+      pada uji coba ke 6 ini kita diarahkan untuk menginputkan gambar, membuat inputan untuk upload file, dan membuat inputan tersebunyi.
+   </p>
+
+   <hr>
+   <h3>Uji Coba 7</h3>
+   <label for="quantity">Quantity (between 1 and 5):</label>
+   <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+   <label for="vol">Volume (between 8 and 50):</label>
+   <input type="range" id="vol" name="vol" min="0" max="50"><br>
+   <p>
+      Pada uji coba ke 7 ini kita diarahkan untuk membuat inputan angka dengan batas angka min 1 dan max 10. 
+      lalu kita diarahkan untuk membuat slider nilai dengan nilai min 0 dan max 50. 
+   </p>
+
+   <hr>
+   <h3>Uji Coba 8</h3>
+   <label for="homepage">Add your homepage:</label>
+   <input type="url" id="homepage" name="homepage"><br>
+   <label for="gsearch">Search Google:</label>
+   <input type="search" id="gsearch" name="gsearch"><br>
+   <label for="ph">Enter your phone number</label>
+   <input type="tel" id="ph" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+   <p>
+      pada uji coba ke 8 ini kita diarahkan untuk membuat inputan alamat website dan inputan pencarian seperti di google.
+      lalu kita diarahkan juga untuk membuat nomor telefon.
+   </p>
+
+   <hr>
+   <h3>Uji Coba 9</h3>
+   <label for="appt">Select a time:</label>
+   <input type="time" id="appt" name="appt"><br>
+   <label for="week">Select a week:</label>
+   <input type="week" id="week" name="week"><br>
+   <p>
+      pada uji coba ke 9 ini kita diarahkan uuntuk membuat input jam dan inputan minggu dalam tahun.
+   </p>
+</body>
+</html>
