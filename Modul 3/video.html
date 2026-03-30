@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hayyu adhini wahida">
+        <meta name="nim" content="253307039">
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }body{
+                font-family: Arial, Helvetica, sans-serif;
+            }header{
+                background-color:#666;
+                padding:30px;
+                text-align:center;
+                font-size:35px;
+                color: white;
+            }nav{
+                float: left;
+                width: 30%;
+                height: 1000px;
+                background: #ccc;
+                padding: 20px;
+            }nav ul{
+                list-style-type:none;
+                padding: 0;
+            }article{
+                float:left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 1000px;
+            }section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }@media(max-width:600px){
+                nav, article {
+                    width:100%;
+                    height:auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Website Dhini Gembul </h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="pendaftaran.html">Form Pendaftaran</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Video</h1>
+                <!--kontent disini-->
+                <video width="auto" height="315">
+                    <source src="video/dw.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay  muted width="auto" height="315">
+                    <source src="video/dw.mp4" type="video/mp4">
+                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M2WTUoy4y6E?si=QwEyzv9_VFEqjbdP" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><!--Tuliskan kesimpulan uji coba disini--> pada praktik ini, kita mempelaajari cara menambahkan video ke dalam website dengan menggunakan tag html video dan iframe. tag video digunakan untuk memutar file videoo local yang disimpan di dalam folder project. sedangkan
+                    iframe digunakkan untuk menammpilkan video dari youtube melalui embed. pada saat menambahkan video kedalam website dita harus menggunakan atribut seperti controls, autoplay, atau muted jika tidak video tidak akan berjalan. 
+                </p>
+            </article>
+        </section>
+    </body>
+    <footer>
+        <p><i>copyright@Hayyuadhiniwahida_253307039</i></p>
+    </footer>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hayyu adhini wahida">
+        <meta name="nim" content="253307039">
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }body{
+                font-family: Arial, Helvetica, sans-serif;
+            }header{
+                background-color:#666;
+                padding:30px;
+                text-align:center;
+                font-size:35px;
+                color: white;
+            }nav{
+                float: left;
+                width: 30%;
+                height: 550px;
+                background: #ccc;
+                padding: 20px;
+            }nav ul{
+                list-style-type:none;
+                padding: 0;
+            }article{
+                float:left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 550px;
+            }section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }@media(max-width:600px){
+                nav, article {
+                    width:100%;
+                    height:auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Website Dhini Gembul</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="pendaftaran.html">Form Pendaftaran</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Form Penjadwalan Pertemuan</h1>
+                <!--kontent disini-->
+                    <form>
+                        <fieldset>
+                            <legend>Informasi Pribadi</legend>
+                            <table>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td><input type="text" name="nama" required></td>
+                                </tr>
+                                <tr>
+                                    <td>No. Telepon</td>
+                                    <td><input type="tel" name="telepon" 
+                                        pattern="[0-9]{4}-[0-9]{6}"
+                                        placeholder="xxxx-xxxxxx" required>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat Email</td>
+                                    <td><input type="email" name="email" placeholder="name@gmail.com" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal Lahir</td>
+                                    <td><input type="date" name="lahir" min="1987-01-01" max="1993-01-01" required></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Permintaan Pertemuan</legend>
+                            <table>
+                                <tr>
+                                    <td>Tujuan Pertemuan</td>
+                                    <td><input type="text" name="tujuan" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Tingkat Kepentingan Pertemuan</td>
+                                    <td><input type="range" name="kepentingan" 
+                                        min="0"
+                                        max="10" required>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal</td>
+                                    <td><input type="date" name="tanggal" min="2026-01-01" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Waktu</td>
+                                    <td><input type="time" name="waktu" min="17:00" max="21:00" required></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+            </article>
+        </section>
+    </body>
+    <footer>
+        <p><i>copyright@Hayyuadhiniwahida_253307039</i></p>
+    </footer>
+</html>

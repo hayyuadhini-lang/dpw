@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-sacel=1">
+        <meta name="author" content="Hayyu adhini wahida">
+        <meta name="nim" content="253307039">
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }body{
+                font-family: Arial, Helvetica, sans-serif;
+            }header{
+                background-color:#666;
+                padding:30px;
+                text-align:center;
+                font-size:35px;
+                color: white;
+            }nav{
+                float: left;
+                width: 30%;
+                height: 550px;
+                background: #ccc;
+                padding: 20px;
+            }nav ul{
+                list-style-type:none;
+                padding: 0;
+            }article{
+                float:left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 550px;
+            }section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }.gallery {
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
+            }
+            .gallery img{
+                width:100%;
+                height:auto;
+                object-fit: cover;
+            }
+            @media(max-width:600px){
+                nav, article {
+                    width:100%;
+                    height:auto;
+                }.gallery{
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <script>
+        function klikGambar(nama){
+            alert("kamu klik gambar:"+nama)
+        } function zoomIn(img){
+            img.style.transform ="scale(1.2)";
+            img.style.zIndex = "10";
+            img.style.position = "relative";
+        }function zoomOut(img){
+            img.style.transform = "scale(1)";
+            img.style.zIndex = "1";
+        }
+        
+        
+    </script>
+    <body>
+        <header>
+            <h2>Website Dhini Geembul</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                    <li><a href="pendaftaran.html">Form Pendaftaran</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1> EVENT PHOTOSHOOT ALBUM</h1>
+                <!--kontent disini-->
+                <div class="gallery">
+                <img src="gambar/dw1.jpg" onclick="klikGambar('dw1')" onmouseover="masukGambar(this)" onmouseout="keluarGambar(this)">
+                <img src="gambar/dwk.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/dw2.jpg" onclick="klikGambar('dw2')" onmouseover="masukGambar(this)" onmouseout="keluarGambar(this)">
+                <img src="gambar/dwg.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/dww.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/dwn.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                </div>
+                <p><!--Tuliskan kesimpulan uji coba disini--> 
+                </p>
+            </article>
+        </section>
+    </body>
+    <footer>
+        <p><i>copyright@Hayyuadhiniwahida_253307039</i></p>
+    </footer>
+</html>
