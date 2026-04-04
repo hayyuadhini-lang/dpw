@@ -1,0 +1,39 @@
+<HTML>
+    <HEAD>
+        <TITLE>MENGAKSES OBJEK RADIO</TITLE>
+    </HEAD>
+    <BODY>
+        KLIK PADA MUSIK YANG PALING ANDA SUKAI <BR>
+        <FORM NAME="formTes"
+            METHOD="GET">
+        <INPUT TYPE="RADIO"
+            NAME="IDOLKPOP"
+            VALUE="AESPA"
+            onClick="info()">AESPA<br>
+        <INPUT TYPE="RADIO"
+            NAME="IDOLKPOP"
+            VALUE="HEART2HEART"
+            onClick="info()">HEART2HEART<br>
+        <INPUT TYPE="RADIO"
+            NAME="IDOLKPOP"
+            VALUE="REDVELVET"
+            onClick="info()">REDVELVET<br>
+        <INPUT TYPE="RADIO"
+            NAME="IDOLKPOP"
+            VALUE="LAINNYA"
+            onClick="info()">LAINNYA<br>
+            <BR>
+        info:
+        <INPUT TYPE="TEXT"
+        NAME="GIRLGROUP"
+        SIZE="40">
+        </FORM>
+        <SCRIPT LANGUAGE ="JavaScript">
+            function info (){
+                for (var i = 0; i < 4; i++)
+                if (document.formTes.IDOLKPOP[1].checked)
+                    document.formTes.GIRLGROUP.value=document.formTes.value;
+            }
+        </SCRIPT>
+    </BODY>
+</HTML>

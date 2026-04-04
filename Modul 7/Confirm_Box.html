@@ -1,0 +1,22 @@
+<HTML>
+    <BODY>
+        <H2>JavaSript Confirm Box</H2>
+        <BUTTON onclick="myFunction()">Klik disini ya kakak Comel</BUTTON>
+        <P id="demo"></P>
+        <SCRIPT>
+            function myFunction() {
+                var txt;
+                if (confirm("Apakah Anda akan logout dari aplikasi ini?")) {
+                    txt = "Terima kasih Anda sudah menggunakan layanan kami"
+                }else {
+                    txt = "Terima kasih Anda Masih Menggunakan Layanan Kami"
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </SCRIPT>
+        <p>praktik kali ini kita diajarkan untuk membuat program yang memberikan pilihan kepada pengguna dengan kotak konfirmasi, lalu menampilkan pesan berbeda sesuai pilihan yang dipilih oleh pengguna.
+            kita disini diarakan menggunakan fungsi confirm() untuk menampilkan kotak dialog. disini juga menggunakan fungsi myFunction(), myFunction() adalah sebuah funsi Javascript yang dipaggil ketika tombol diklik. 
+            myFunction() berisi perintah-perintah tertentu.
+        </p>
+    </BODY>
+</HTML>

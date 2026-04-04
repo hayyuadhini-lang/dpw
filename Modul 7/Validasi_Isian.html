@@ -1,0 +1,29 @@
+<HTML>
+    <HEAD>
+        <TITLE>Validasi Masukan</TITLE>
+    </HEAD>
+    <BODY>
+        <SCRIPT language = "JavaScript">
+            function cekNama(form) {
+                if (form.elements[0].value == ""){
+                    alert ("Nama harus dimasukkan");
+                    form.nama.focus();
+                    form.nama.select();
+                    return (false);
+                }
+                alert ("Terima kasih" + form.elements[0].value);
+                return(true);
+            }
+        </SCRIPT>
+        <FORM NAME = "formku">
+            <PRE>
+                Nama : <INPUT TYPE = "TEXT" NAME = "nama"><BR>
+                    <INPUT TYPE = "BUTTON" VALUE = "kirim" 
+                    onclick = "cekNama (this.form)"><BR>
+            </PRE>
+        </FORM>
+        <p>pada praktik ini kita diajarkan untuk membuat program yang melakukan validasi masukan pada form.
+            Program ini memastikan bahwa pengguna harus mengisi form tersebut. sebelum data diproses. fungsi yang digunakan adalah
+            cekNama(form), yang dipanggil ketika tombol "kirim" ditekan.</p>
+    </BODY>
+</HTML>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combinator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hayyu adhini wahida">
+        <meta name="nim" content="253307039">
+
+        <style>
+          div p { /*1*/
+            color:red;
+          }
+          div > p { /*2*/
+            background-color: yellow;
+          }
+          div + p { /*3*/
+            background-color: darkgray;
+          }
+          div ~ p { /*4*/
+            color: cyan;
+          }
+        </style>
+    </head>
+    <body>
+      <div><p>This is a paragraf. div p yang memilih semua elemen p yang berada di dalam div, baik sebagai anak langsung maupun didalam elemen lain didalam.jadi selama p masih ada didalam div, maka teksnya akan berwarna merah.</p>
+            <p>This is a paragraf. div > p yang memilih elemen p yang merupakan anak langsung dari div.jadi jika p berada langsung didalamm div, maka background nya berwarna kuning.</p>
+      </div>
+          <p>This is a paragraf. div + p yang memilih elemen p pertama yang berada tepat setelah div. jadi jika setelah div langsung ada p, maka p tesebut akan memiliki background abu-abu gelap.</p>
+          <p>This is a paragraf. div ~ p yang memilih elemen p yang berada setelah div </p>
+    </body>
+</html>

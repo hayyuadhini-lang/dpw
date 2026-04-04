@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu jQuery</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            ul{
+                list-style:none;
+                padding:0;
+                width:200px;
+            }
+            li{
+                background: #3498db;
+                color: white;
+                padding:10px;
+                margin-bottom:2px;
+                cursor:pointer;
+            }
+            .submenu li{
+                padding:8px;
+                background:#ecf0f1;
+                color:black;
+                border-bottom:1px solid #ddd;
+            }
+            .submenu {
+                display:none;
+                background:#ecf0f1;
+                padding-left:15px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu").click(function(){
+                $(this).children(".submenu").slideToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Kedai Dhini Gembul</h2>
+        <ul>
+            <li class="menu">Klepon
+            <ul class="submenu">
+                <li>Klepon Original</li>
+                <li>Klepon Mix</li>
+            </ul>
+            </li>
+            <li class="menu">Klepon Es Krim
+            <ul class="submenu">
+                <li>KLepon Es Krim Vanila</li>
+                <li>KLepon Es Krim Coklat</li>
+            </ul>
+            </li>
+            <li class="menu">Minuman
+            <ul class="submenu">
+                <li>Jahe Hangat</li>
+                <li>Kopi</li>
+            </ul>
+            </li>
+        </ul>
+        <p>pada praktik kali ini kita disuruh untuk memebuat menu jquery. disini kita menggunakan fungsi event click() dan efek slieToggle(),
+            jadi submenu dapat ditampilkan atau disembunyikan ketika menu dipilih. 
+        </p>
+    </body> 
+</html>

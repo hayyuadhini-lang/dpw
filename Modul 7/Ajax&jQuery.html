@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>AJAX dan jQuery</title>
+        <style>
+            body{
+                font-family: Arial,  sans-serif;
+                line-height: 1.6;
+                padding:20px;
+                color:#333;
+            }
+            h2{
+                color:#2c3e50;
+                border-bottom:2px solid #ddd;
+            }
+            h3{
+                color: #2980b9;
+            }
+            code{
+                background: #f4f4f4;
+                padding:3px 6px;
+                border-radius:4px;
+            }
+            .example{
+                border: 1px solid #ccc;
+                padding: 15px;
+                background: #fafafa;
+                margin-top: 18px;
+            }
+            .note{
+                font-style: italic;
+                color:#666;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <h2>Penjelasan AJAX dan jquery</h2>
+        <h3>1. Pengertian AJAX</h3>
+        <p>
+            <strong>AJAX (Asynchronous JavaScript and XML)</strong> adalah teknik dalam pengembangan web yang memungkinkan haaman web mengambil atau mengirim data ke server tanpa harus memuat ulang seluruh halaman. Dengan AJAX, data dapat diperbarui secara 
+            <em>Asynchronous</em> sehingga website menjadi lebih cepat dan interaktif.
+        </p>
+        <h3>2. Pengertian jQuery</h3>
+        <p>
+            <strong>jQuery</strong> adalah library JavaScript yang digunakan untuk mempermudah penulisan kode JavaScript. jQuery membantu developer melakukan manipulasi HTML,mengatur event, membuat animasi, dan Menggunakan AJAX dengan lebih sederhana dan singkat.
+        </p>
+        <h3>3. Cara Menggunakan jQuery</h3>
+        <p>
+            untuk menggunakan jQuery, kita harus menambahkan library jQuery ke dalam file HTML. contohnya menggunakan CDN seperti berikut:
+        </p>
+        <p><code>&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&lt;/script&gt</code></p>
+        <h3>4. Contoh Pemanfaatan jQuery Sederhana</h3>
+        <p>Contoh berikut menampilkan penggunaan jQuery untuk menyembunyikan dan menampilkan teks.</p>
+        <div class="example">
+            <p id="teks">ini adalah contoh teks yang dapat disembunyikan atau ditampilkan menggunakan jQuery.</p>
+            <button id="sembunyi">Sembunyikan</button>
+            <button id="tampilkan">Tampilkan</button>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#sembunyi").click(function(){
+                    $("#teks").hide(500);
+                });
+            $("#tampilkan").click(function(){
+                $("#teks").show(500);
+            });
+        });
+        </script>
+        <p class="note">
+            Contoh diatas menunjukkan bagaimana jQuery mempermudah pemilihan elemen dan pengamanan event klik dengan kode yang lebih sederhana. 
+        </p>
+        <p> pada praktik kali ini kita disuruh membuat program yang menjelaskan AJAX dan jQuery dan memberikan contoh penggunaannya. Halaman web ini dibuat denga struktur HTML yang dilengkapi CSS untuk mengatur tampilannya.
+            web ini menunjukkan bahwa jQuery dapat mempermudah manipulasi elemen HTML dan pengelolaan Event pada halaman web dengan kode yang lebih singkat dan mudah dipahami.
+        </p>
+    </body>
+</html>

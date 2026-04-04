@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>program Basic Fialog jQuery</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                margin-top: 100px;
+                background:#f5f5f5;
+            }
+            h2{
+                color:#2c3e50;
+            }
+            button{
+                padding: 10px 20px;
+                background: #3498db;
+                color:white;
+                border:none;
+            }
+            button:hover{
+                background: #2980b9;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <h2>Contoh Basic Dialog dengan jQuery</h2>
+        <p>Dialog akan otomatis saat halaman dibuka</p>
+        <div id="dialogBasic" title="Informasi">
+            <p>ini adalah contoh <b>Basic Dialog</b> menggunakan jQuery UI</p>
+        </div>
+        <br>
+        <button id="btnBuka">Buka Dialog</button>
+        <script>
+        $(function(){
+            $("#dialogBasic").dialog({
+                autoOpen:true,
+                width:320,
+                show:{effect:"fade", duration:400},
+                hide:{effect:"fade", duration:400}
+            });
+            $("#btnBuka").click(function(){
+            $("#dialogBasic").dialog("open");
+            });
+        });
+        </script>
+        <p>pada praktik kali ini kita disuruh untuk membuat jendela basic dialog menggunakan jQuery.
+            disini kita menggunakan fungsi dialog(), elemenHTLM yang dapat ditampilkan sebagai kotak 
+            dialoog yang muncul secara otomatis ketika halamman dibuka dan dapat dibuka kembali melalui tombol. </p>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Download Dialog dengan Progressbar</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <style>
+            body{
+                font-family:Verdana,  Tahoma, sans-serif;
+                text-align:center;
+                margin-top:100px;
+            }
+            #progressbar{
+                margin-top:10px;
+            }
+            .progress-label{
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+            <div id="download-dialog" title="File Download">
+                <div class="progress-label">Starting download...</div>
+                <div id="progressbar"></div>
+            </div>
+            <script>
+                $(function(){
+                    var progressbar = $("#progressbar"),
+                    progressLabel = $(".progress-label");
+                     progressbar . progressbar({
+                        value:false,
+                        change:function(){
+                            progressLabel.text("Download Progress:" + progressbar.progressbar("value")+"%");
+                        },
+                        complete: function(){
+                            progressLabel.text("Download Complete!");
+                        }
+                     });   
+                function progress(){
+                    var val = progressbar.progressbar("value")||0;
+                    progressbar.progressbar("value",val +2);
+                    if(val < 99){
+                        setTimeout(progress,80)
+                    }
+                    }
+                    $("#download-dialog").dialog();
+                    setTimeout(progress, 1000);
+                });
+            </script>
+            <p>pada praktik kali ini kita disuruh untuk membuat program download dialog yang menampilkkan progressbar menggunakan jQuery UI. Dialog digunakan untuk menampilkan jendela pop-up yang berisi informasi progress download, sedangkan progressbar berfungsi untuk menunjukkan perkembangan proses download dari 0% higga selesai.
+                pada programm ini kita mmenggunakan fungsi dialog() dan progress(), progress download dapat ditampilakan secara visual interaktif. </p>
+        </body>
+</html>

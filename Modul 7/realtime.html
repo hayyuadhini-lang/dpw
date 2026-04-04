@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Waktu Real time</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin-top: 100px;
+            }
+            #clock{
+                font-size: 28px;
+                font-weight: bold;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body onload="tampilkanwaktu()">
+        <h2>waktu saat ini</h2>
+        <div id="clock"></div>
+        <script>
+            function tampilkanwaktu(){
+                setInterval(function(){
+                    const sekarang =new Date();
+                    document.getElementById("clock").innerHTML =
+                    sekarang.toLocaleString("id-ID");
+                },1000);
+            }
+        </script>
+        <p>pada praktik kali ini kita disuruh membuat waktu secara realtime.
+            disini saya menggunakan fungsi setInterval(), program akan terus memperbarui isi element div id="clock" setiap detik menggunakan obejek date. hasil dari 
+            program ini adalah pengguna bisa melihat jam yang berjalan langsung tanpa perlu melakukan refresh halaman. selain itu penggunaan toLacaleString("id ID") membuat
+            format waktu mengikuti waktu indonesia.
+        </p>
+    </body>
+</html>
