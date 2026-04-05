@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar grid</title>
+        <style>
+            .grid-container{
+                display: grid;
+                grid-gap: 50px;
+                background-color: #2196f3;
+                padding: 10px;
+            }
+            .item1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding:20px;
+                grid-row:1/4;
+            }
+            .item2{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding:20px;
+                grid-row:1/4;
+            }
+            .item{
+            background-color: rgba(255, 255, 255, 0.8);   
+            border: 1px solid rgba(0,0,0,0.8);
+            padding: 20px;
+            font-size:30px;
+            text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item1">2</div>
+            <div class="item1">3</div>
+            <div class="item1">4</div>
+            <div class="item1">5</div>
+            <div class="item1">6</div>
+            <div class="item1">7</div>
+            <div class="item1">8</div>
+            
+        <div class="grid-container">
+            <div class="item2">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+            <div class="item2">5</div>
+            <div class="item2">6</div>
+            <div class="item2">7</div>
+            <div class="item2">8</div>
+            <div>dengan menggunakan proprti grid-row dan gridd-column pada css grid, elemen dapat diatur unutk menepati lebih dari satu baris atau satu kolom dalam layout grid.
+                perubahan nilai pada kedua  properti tersebut akan mempengaruhi possisi serta ukuran eolemen didalam grid, sehingga tata letak halaman menjadi lebih fleksibel dan mudah disesuaikan dengan kebutuhan desain.
+            </div>
+        </div>
+    </body>
+</html>

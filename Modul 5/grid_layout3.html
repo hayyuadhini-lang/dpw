@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar CSS Grid box</title>
+    <style>
+        .tempat_grid{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196f3;
+            padding:10px;  
+            grid-column-gap: 120px;
+            grid-row-gap:60px;
+        }
+        .tempat_grid_4{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196f3;
+            padding:10px;  
+            grid-gap: 50px;
+            
+        }
+        .item_grid{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tampilan:</h1>
+    <div class="tempat_grid">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+        <div>dengan menggunakan properti grid-column-gap dan grid-rrow-gap, jarak antar kolom dan baris pada CSS Grid dapat diatur. hal ini membuat elemen-elemen didalan grid tidak terlalu rapat sehingga tampulan menjadi lebih rapi dan terstuktur.
+        </div>
+    </div>
+    <h1>Tampilan: skenario 4</h1>
+    <div class="tempat_grid_4">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+        <div>dengan menggunakan properti grid-gap, jarak antar baris dan kolom pada CSS grid dapat diatur sekaligus dalam satu properti. hal ini membuat penulisan kode menjadi lebih singkat dibandingkan meenggunakan grid-column-gap dan gridd-row-gap, serta tetap mmenghasilkan jarak yang rapi antar elemen grid
+        </div>
+    </div>
+</body>
+</html>

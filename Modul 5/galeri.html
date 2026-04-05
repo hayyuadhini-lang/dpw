@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery flexbox</title>
+    <style>
+        .gallery{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+        }
+        .item{
+            width:39px;
+            height:29px;
+            overflow:hidden;
+        }
+        .item img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gallery Foto Flexbox</h2>
+    <div class="gallery">
+        <div class="item"><img src="gambar/rude.jpg"></div>
+        <div class="item"><img src="gambar/jiwoo.r.jpg"></div>
+        <div class="item"><img src="gambar/carmen.r.jpg"></div>
+        <div class="item"><img src="gambar/juun.r.jpg"></div>
+        <div class="item"><img src="gambar/ana.r.jpg"></div>
+        <div class="item"><img src="gambar/ian.r.jpg"></div>
+        <div class="item"><img src="gambar/yuha.r.jpg"></div>
+        <div class="item"><img src="gambar/stella.r.jpg"></div>
+        <div class="item"><img src="gambar/yeon.r.jpg"></div>
+        <div class="item"><img src="gambar/style.jpg"></div>
+        <div class="item"><img src="gambar/jiwoo.s.jpg"></div>
+        <div class="item"><img src="gambar/carmen.s.jpg"></div>
+        <div class="item"><img src="gambar/juun.s.jpg"></div>
+        <div class="item"><img src="gambar/ana.s.jpg"></div>
+        <div class="item"><img src="gambar/ian.s.jpg"></div>
+        <div class="item"><img src="gambar/yuha.s.jpg"></div>
+        <div class="item"><img src="gambar/stella.s.jpg"></div>
+        <div class="item"><img src="gambar/yeon.s.jpg"></div>
+    </div>
+    <p>pada praktik ini galeri foto dapat dibuat menggunakan css flexbox dengan display: flex dan flex-wrap sehingga gambar dapat tersusuun secara otomatis menjadi beberapa kolom baris. penambahan div pada setiap item memudahkan pengaturan ukuran dan tampilan gambar agar lebih rapi.</p>
+</body>
+</html>

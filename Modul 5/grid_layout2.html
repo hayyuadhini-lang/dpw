@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .grid-container{
+                display: grid;
+                grid-gap: 50px;
+                background-color: #2196f3;
+                padding: 10px;
+            }
+            .skenario2{
+                display: grid;
+                grid-gap: 50px;
+                background-color: #2196f3;
+                padding: 10px;
+                grid-template-columns:auto auto auto auto;
+            }
+            .skenario2_1{
+                display: grid;
+                grid-gap: 50px;
+                background-color: #2196f3;
+                padding: 10px;
+                grid-template-columns:70px 300px auto 40px;
+            }
+            .skenario2_2{
+                display: grid;
+                grid-gap: 50px;
+                background-color: #2196f3;
+                padding: 10px;
+                grid-template-columns: 10px 500px 20px 10px;
+            }
+            .item1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding:20px;
+            }
+            .skenario1{
+                grid-column-start: 5;
+                grid-column-end: 10;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding:20px;
+            }
+            .item{
+            background-color: rgba(255, 255, 255, 0.8);   
+            border: 1px solid rgba(0,0,0,0.8);
+            padding: 20px;
+            font-size:30px;
+            text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item1">2</div>
+            <div class="item1">3</div>
+            <div class="item1">4</div>
+            <div class="item1">5</div>
+            <div class="item1">6</div>
+            <div class="item1">7</div>
+            <div class="item1">8</div>
+            <div>dengan menggunakan CSS grid serta properti grid-column-start dan grid-column-end, suatu elemen dapat diatur agar menepati lebih dari satu kolom pada grid. hal ini memungkinkan tata letak halaman menjadi lebih fleksibel karena elemen dapat diperluas atau diposisikan sesuai kebutughan dalam struktur grid</div>
+        </div>
+        <div class="grid-container">
+            <div class="skenario1">1</div>
+            <div class="skenario1">2</div>
+            <div class="skenario1">3</div>
+            <div class="skenario1">4</div>
+            <div class="skenario1">5</div>
+            <div class="skenario1">6</div>
+            <div class="skenario1">7</div>
+            <div class="skenario1">8</div>
+            <div>dengan menggunakan CSS grid serta properti grid-column-start dan grid-column-end, dengan nilai yang lebih besar (misalnya dari kolom 5 sampai 10), elemen pada CSS grid dapat diperluas sehingga menempati beberapa kolom sekaligus. hal ini membuat tata letak grid menjadi lebih fleksibel dan memungkinkan pengaturan posisi elemen sesuai kebutuhan desain halaman</div>
+        </div>
+        <div class="skenario2">
+            <div class="skenario1">1</div>
+            <div class="skenario1">2</div>
+            <div class="skenario1">3</div>
+            <div class="skenario1">4</div>
+            <div class="skenario1">5</div>
+            <div class="skenario1">6</div>
+            <div class="skenario1">7</div>
+            <div class="skenario1">8</div>
+            <div>dengan menggunakan properti grid-template-columns: auto auto auto auto, container grid akan membagi ruang menjadi empat kolom dengan ukuran otomatis. setiap kolom menyesuaian ukuran kontennya sehingga elemen elemen di dalam grid dapat tersusun rapi dalam beberapa kolom yang sama.</div>
+        </div>
+        <div class="skenario2_1">
+            <div class="skenario1">1</div>
+            <div class="skenario1">2</div>
+            <div class="skenario1">3</div>
+            <div class="skenario1">4</div>
+            <div class="skenario1">5</div>
+            <div class="skenario1">6</div>
+            <div class="skenario1">7</div>
+            <div class="skenario1">8</div>
+            <div>dengan menggunakan properti grid-template-columns: 70px 300px auto 40 px, setiap kolom pada grid dapat memiliki ukuran yang berbeda beda hail ini memungkinkan pengaturan tata letak yang lebih spesifik karena beberapa kolom dapat dibuat tetap (fixed) sementara kolom lainnya menyesuaikan ruang yang tersedia</div>
+        </div>
+        <div class="skenario2_2">
+            <div class="skenario1">1</div>
+            <div class="skenario1">2</div>
+            <div class="skenario1">3</div>
+            <div class="skenario1">4</div>
+            <div class="skenario1">5</div>
+            <div class="skenario1">6</div>
+            <div class="skenario1">7</div>
+            <div class="skenario1">8</div>
+            <div>dengan menggunakan properti grid-template-columms:10pxx 500px 20px 10px setiap kolom pada CSS grid dapat diatur dengan ukuran yang sangat spesifik. hal ini memungkinkan pengembang menentukan lebar kolom secara tetap sehingga tata letak elemen menjadi lebih terkontrol dan sesuai dengan kebutuhan desain halaman. </div>
+        </div>
+    </body>
+</html>

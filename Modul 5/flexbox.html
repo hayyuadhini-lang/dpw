@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar flex Box</title>
+    <style>
+        .wadah_flex1{
+            display:flex;
+            background-color: azure;
+            gap: 10px;
+            padding: 10px;
+        }
+        .wadah_flex2 > div{
+            background-color:hotpink;
+            margin:10px;
+            padding:100;
+            font-size: 30px;
+            color: black;
+        }
+        .wadah_flex3{
+            background-color:hotpink;
+            display:flex; 
+            flex-direction: column; 
+        }
+        .wadah_flex3_1{
+            background-color:hotpink;
+            display:flex; 
+            flex-direction:row; 
+        }
+        .wadah_flex4{
+            background-color:hotpink;
+            display:flex; 
+            flex-wrap:inherit;  
+        }
+        .wadah_flex4_1{
+            background-color:hotpink;
+            display:flex; 
+            flex-wrap:wrap; 
+        }
+        .wadah_flex5{
+            background-color:hotpink;
+            display:flex; 
+            flex-flow:column-reverse;  
+        }
+        .wadah_flex5_1{
+            background-color:hotpink;
+            display:flex; 
+            flex-flow:wrap; 
+        }
+        .wadah_flex6{
+            background-color:hotpink;
+            display:flex; 
+            justify-content: center; 
+        }
+        .wadah_flex6_1{
+            background-color:hotpink;
+            display:flex; 
+            justify-content: left; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Skenario 1</h2>
+    <div class="wadah_flex1".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>kesimpulan skenario 1 adalah: warna background pada flex box berguna untuk memperjelas batas tiap elemen.</p>
+    <h2>Skenario 2</h2>
+    <div class="wadah_flex2".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>kesimpulan skenario 2 adalah: warna , margin, padding, dan ukuran font berperan pandding dalam memperjelas batas wadah serta menekankan isi di dalamnya. disini kita tidak menggunakan display:flex, walaupun tidak menggunakan display:flex wadah tetap bisa berfungsi sebagai area pembungkus dengan gaya visual yang berbeda.</p>
+    <h2>Skenario 3</h2>
+    <div class="wadah_flex3".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 3 adalah: dengan menggunakan flex-diraction: column, elemen-elemen didalam wadah flex akan tersusun secara vertikal dari atas ke bawah sehingga membentuk satuan kolom.</p>
+    <h2>Skenario 3.1</h2>
+    <div class="wadah_flex3_1".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 3.1 adalah: dengan menggunakan flex-diraction: row, elemen-elemen did alam wadah flex akan tersusun secara hirizontal dari kiri ke kanan sehingga membentuk satu baris.</p>
+    <h2>Skenario 4</h2>
+    <div class="wadah_flex4".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 4 adalah: dengan menggunakan flex-wrap: inherit, membuat elemen di dalam wadah flex mengikuti peraturan pembungkusan dari elemen induknya. jadi tidak ada pengaturan sebelumnya, maka elemen  akan tetap tersusun dalam satu barus mmeskipun jumlahnya banyak.</p>
+    <h2>Skenario 4.1</h2>
+    <div class="wadah_flex4_1".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 4.1 adalah: dengan menggunakan flex-wrap: wrap, membuat elemen di dalam wadah flex dapat berpindah kebaris berikutnya secara otomatis ketika rung dalam satu baris tidak mmencukupi sehingga tampilan menjadi lebih rapi.</p>
+    <h2>Skenario 5</h2>
+    <div class="wadah_flex5".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 5 adalah: dengan menggunakan flex-flow: column-reverse, membuat elemen elemen di dalam wadah flex tersusun secara vertikal dari bawah ke atas sehingga urutan tampilannya menjadi kebalikan dari urutan penulisan pada HTML</p>
+    <h2>Skenario 5.1</h2>
+    <div class="wadah_flex5_1".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 5.1 adalah: dengan menggunakan flex-flow: wrap, membuat elemen di dalam wadah flex dapat berpindah kebaris berikutnya secara otomatis ketika rung dalam satu baris tidak mencukupi sehingga tampilan menjadi lebih rapi.</p>
+    <h2>Skenario 6</h2>
+    <div class="wadah_flex6".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 6 adalah: dengan menggunakan justify-content: center, semua elemen di dalam wadah flex akan ditempatkan di bagian tengah secara horizontal sehingga tampilan menjadi lebih seimbang dan rapi.</p>
+    <h2>Skenario 6.1</h2>
+    <div class="wadah_flex6_1".>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>kesimpulan skenario 6.1 adalah: dengan menggunakan justify-content: left, elemen-elemen di dalam wadah flex akan tersusun mulai dari sisi kiri container secara hotizontal</p>
+</body>
+</html>
